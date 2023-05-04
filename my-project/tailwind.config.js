@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         dark: "#0000",
         brown: "#4f2402",
+        navgray: "#c7d0d8",
       },
     },
   },
