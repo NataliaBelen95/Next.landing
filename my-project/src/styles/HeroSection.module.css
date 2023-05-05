@@ -35,6 +35,13 @@
 
   }
 
+  .svg_hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;

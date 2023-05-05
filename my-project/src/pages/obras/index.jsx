@@ -1,15 +1,22 @@
+
 import NavBar from "@/components/NavBar";
+
+import React from "react";
+
 
 const Obras = [
   {
     name: "Palacio Cabreal Hunter (embajada de Portugal)",
+
     decripcion: [
       "cambio de la cubierta del techo, arreglos e impermeabilizacion medianera sobre bodegas chandon s.a, pintura de las fachadas y patios internos; reparacion de aberturas, restauracion de los pisos de los salones rojo, blanco y amarillo, restauracion de la mesa del comedor principal",
     ],
+
     año: 2021,
     img: "/obra1/embajada.jpg",
   },
   {
+
     name: "Tren san miguel (trenes argentinos)",
     descripcion: "Demolicion y retiro de materiales de estructura",
     img: "",
@@ -21,10 +28,12 @@ const Obras = [
   },
   {
     descripcion: "Remodelacion de la planta depuradora sur en tandil",
+
   },
   {
     name: "Casa Rosada",
     descripcion:
+
       "Refaccion de las oficinas, pasillo y antesala de la casa rosada zona presidencia, demolicion y desmonte de la ex cocina y ex comedor",
   },
 
@@ -34,12 +43,14 @@ const Obras = [
   },
   {
     name: "Deposito nave 53 talleres remedios de escalada",
+
     descripcion:
       "Reconstruccion deposito nave 53 talleres remedios de escalada (remolicion, desmontaje retiro de material producido reemplazo de componenetes y puso, revetimnientos y revoques.)",
   },
 ];
 const ObrasList = ({ obras }) => {
   return (
+
     <>
       <NavBar />
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-40 p-4">
@@ -62,16 +73,19 @@ const ObrasList = ({ obras }) => {
         ))}
       </div>
     </>
+
   );
 };
 
 const Index = () => {
+
   return (
     <>
       <NavBar />
       <ObrasList obras={Obras} />
     </>
   );
+
 };
 
 export default Index;
