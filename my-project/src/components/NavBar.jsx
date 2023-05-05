@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import HeroSection from "./HeroSection";
+
 // import Logo from "./Logo";
 import { useState, useEffect } from "react";
-
+import { useRouter } from "next/router";
 import logo from "../assets/constructora/logo.blanco.png";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ const AllLinks = () => [
     whereName: "Sobre Nosotros",
   },
   {
-    path: "#obras",
+    path: "/obras",
     whereName: "Nuestras Obras",
   },
   {
@@ -25,7 +25,6 @@ const AllLinks = () => [
     whereName: "Contacto",
   },
 ];
-
 const NavBar = () => {
   const [active, setActive] = useState(false);
   const handleClick = () => {
@@ -36,27 +35,32 @@ const NavBar = () => {
 
   const [hideNav, setHideNav] = useState(true);
 
+  const router = useRouter();
   useEffect(() => {
-    let prevScrollY = window.pageYOffset;
+    if (router.pathname === "/") {
+      let prevScrollY = window.pageYOffset;
 
-    const handleScroll = () => {
-      const currentScrollY = window.pageYOffset;
+      const handleScroll = () => {
+        const currentScrollY = window.pageYOffset;
 
-      if (prevScrollY > currentScrollY) {
-        setHideNav(true);
-      } else {
-        setHideNav(false);
-      }
+        if (currentScrollY > prevScrollY && currentScrollY > 100) {
+          setHideNav(true);
+        } else {
+          setHideNav(false);
+        }
 
-      prevScrollY = currentScrollY;
-    };
+        prevScrollY = currentScrollY;
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setHideNav(false); // Asegurarnos de que el estado `hideNav` sea falso en otras rutas
+    }
+  }, [router.pathname]);
 
   const links = AllLinks().map((link) => (
     <Link href={link.path} key={link.whereName} legacyBehavior>
