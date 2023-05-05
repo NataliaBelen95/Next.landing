@@ -13,16 +13,16 @@ const AllLinks = () => [
     whereName: "Inicio",
   },
   {
-    path: "/about",
+    path: "#about",
     whereName: "Sobre Nosotros",
   },
   {
-    path: "/contact",
-    whereName: "Contacto",
+    path: "#obras",
+    whereName: "Nuestras Obras",
   },
   {
-    path: "/services",
-    whereName: "Servicios",
+    path: "#contact",
+    whereName: "Contacto",
   },
 ];
 
@@ -34,7 +34,7 @@ const NavBar = () => {
     console.log("Después de cambiar el estado:", active);
   };
 
-  const [hideNav, setHideNav] = useState(false);
+  const [hideNav, setHideNav] = useState(true);
 
   useEffect(() => {
     let prevScrollY = window.pageYOffset;
