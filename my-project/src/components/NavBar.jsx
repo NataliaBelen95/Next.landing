@@ -17,7 +17,7 @@ const AllLinks = () => [
     whereName: "Sobre Nosotros",
   },
   {
-    path: "#obras",
+    path: "/obras",
     whereName: "Nuestras Obras",
   },
   {
