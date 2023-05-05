@@ -73,7 +73,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`flex items-center flex-wrap bg-black p-3 fixed top-0 left-0 w-full ${
+        className={`flex items-center flex-wrap bg-black p-3 fixed top-0 left-0 w-full  ${
           hideNav ? "hidden" : ""
         }`}
         style={{ transition: "all 0.3s ease-in-out", zIndex: 10 }} // Agrega esta línea

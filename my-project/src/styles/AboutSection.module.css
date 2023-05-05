@@ -1,19 +1,62 @@
 .about {
-    position: relative; /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
-    width: 100%;
-    height: 30vh;
-    background-image:url('../assets/constructora/magic.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-   
-   
+  position: relative;
+  max-width: 100%;
+  height: 70vh; /* Cambiar el valor de la altura */
+  background-image:url(../assets/constructora/abaout/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}
+
+/* Agrega esta regla para ajustar el ancho máximo de la imagen */
+
+.Aboutoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(116, 116, 116, 0.596);
+}
+
+
+
+.text {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .p {
+  font-size: 0.8em;
+  margin: 0 auto;
+  align-items: center;
+  ;
   }
 
+ 
+  .about {
+ 
 
-  .colorOverlay {
-    width: 100%;
+   margin:5px auto
+   
+  }
+  .Aboutoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
     height: 100%;
-    background-color: #333;
-    opacity: 0.6; /* Puedes ajustar la opacidad según sea necesario */
-  }
+    background-color: rgba(116, 116, 116, 0.596);
+    }
+  
+  
+}
