@@ -48,7 +48,7 @@ function GalleryObras() {
       className="container mx-auto px-2 gallery-wrapper"
       style={{ maxWidth: "40%", maxHeight: "50px" }}
     >
-      <h1 className="text-center">Último trabajo</h1>
+      <h1 className="text-center">Trabajos</h1>
       <ImageGallery
         items={images}
         thumbnailPosition="bottom"
