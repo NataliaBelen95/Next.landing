@@ -3,7 +3,10 @@ import style from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={`${style.fondoFooter} bg-white overflow-hidden `}>
+    <footer
+      className={`${style.fondoFooter} bg-white overflow-hidden `}
+      id="contact"
+    >
       <div className="py-8  px-4 mx-auto max-w-screen-md bottom-0 w-full">
         <section className="bg-white dark:bg-divHero rounded w-full">
           <div className="py-8  px-16 mx-auto max-w-screen-md">
@@ -47,7 +50,7 @@ const Footer = () => {
               <div className="sm:col-span-2">
                 <label
                   for="message"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-00"
                 >
                   Tu mensaje
                 </label>

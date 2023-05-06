@@ -3,25 +3,30 @@ import Image from "next/image";
 import style from "../styles/AboutSection.module.css";
 export default function AboutSection() {
   return (
-    <section className={`${style.about} `}>
+    <section className={style.about} id={"about"}>
       <div className="row">
         <div className="col-sm-12 col-md-6">
           <div className={style.text}>
             <h2 className={style.h1t}>Sobre Nosotros</h2>
-            <p className={`${style.p}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              euismod magna mi, vel iaculis orci vestibulum et. Integer
-              scelerisque augue at nibh dapibus consequat. Duis auctor mi velit,
-              ac elementum ipsum maximus sed. Nullam tristique justo ut elit
-              dignissim, a congue nulla auctor.
-            </p>
-            <p className={`${style.p}`}>
-              Fusce venenatis felis nec risus dictum, eget dignissim ex
-              eleifend. Donec congue, turpis ut lacinia feugiat, urna ipsum
-            </p>
             <p className={`${style.p} `}>
-              Nullam facilisis massa sit amet feugiat posuere. Sed et dui dui.
-              Suspendisse potenti. Nunc tristique aliquet metus. Morbi quis
+              Nos especializamos en la construcción, mantenimiento y presupuesto
+              de obras civiles, incluyendo viviendas y edificios públicos y
+              privados. También realizamos obras de infraestructura, como redes
+              de agua potable, cloacas, pluviales, instalaciones de gas,
+              instalaciones eléctricas y tendido de cañerías. En cuanto a obras
+              viales, ofrecemos servicios de movimiento de suelo y pavimentos de
+              hormigón. Asimismo, destacamos en la construcción de pisos y
+              piletas industriales de alta tecnología.
+            </p>
+            <p className={`${style.p}`}>
+              En Fleitas, nos comprometemos a trabajar en estrecha colaboración
+              con nuestros clientes para entender sus necesidades y ofrecer
+              soluciones personalizadas y eficientes para cada proyecto.
+            </p>
+            <p className={`${style.p}`}>
+              Nos enfocamos en la atención al detalle y en cumplir con los
+              plazos de entrega acordados, para que nuestros clientes puedan
+              contar con un servicio confiable y de alta calidad.
             </p>
           </div>
         </div>
