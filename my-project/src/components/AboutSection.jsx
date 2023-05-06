@@ -1,4 +1,4 @@
-import magicImage from "@/assets/constructora/magic.jpg";
+import magicImage from "../assets/constructora/magic.jpg";
 import Image from "next/image";
 import style from "../styles/AboutSection.module.css";
 export default function AboutSection() {
