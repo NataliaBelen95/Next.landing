@@ -1,6 +1,6 @@
 .hero {
     position: relative; /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     background-image:url(https://www.carreras.unse.edu.ar/wp-content/uploads/2020/09/57287-1024x576.jpg);
     background-size: cover;
@@ -56,7 +56,47 @@
     animation-duration: 2s;
   }
 
+  @media only screen and (max-width: 767px) {
+    .hero {
+    /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
+      max-width: 100%;
+      overflow-x: hidden;
+     
+     
+     
+    }
+   
+    
+  
+    .colorOverlay {
+      display: flex;
+      position: absolute;
+      top: 0;
+      align-items: center;
+      left: 0;
+      width: 90%;
+      height: 100%;
+      background-color: rgba(10, 25, 233, 0.603);
+      transform-origin: top right;
+      transform: skew(-25deg);
+    }
+  
+  
+    .hero .img {
+      margin-left: 8rem;
+      margin-top: 12rem;
+      filter: drop-shadow(0 2px 2px rgba(10, 25, 233, 0.603) );
+      width: 40%;
+      
+    }
 
+    .hero h1{
+      font-size: 2rem;
+      font-style:initial;
+      margin-left: 30rem; 
+      filter: drop-shadow(0 2px 2px rgb(0, 0, 0) );
+    }
+  }
 
   /* .colorOverlay h1 {
     color: #fff;

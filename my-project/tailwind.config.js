@@ -16,6 +16,7 @@ module.exports = {
         dark: "#0000",
         brown: "#4f2402",
         navgray: "#c7d0d8",
+        divHero: "rgba(10, 25, 233, 0.603)",
       },
     },
   },

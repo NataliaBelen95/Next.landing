@@ -3,10 +3,16 @@
 @import "tailwindcss/utilities";
 
 
-*{
+* {
   margin:0 ;
   padding: 0;
+  box-sizing: border-box;
+
 }
+
 .my-class {
     color: theme('colors.dark');
   }
+
+
+  

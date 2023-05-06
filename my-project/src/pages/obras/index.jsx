@@ -56,7 +56,9 @@ const ObrasList = ({ obras }) => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-40 p-4">
         {obras.map((obra) => (
           <article
-            key={obra.trabajo}
+
+            key={obra.name}
+
             className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <img
