@@ -4,6 +4,7 @@ import GalleryObras from "../components/GalleryObras";
 import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 import Services from "../components/Services";
+import Clients from "../components/Clients";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <AboutSection />
       <Services/>
+      <Clients/>
       {/* <div
         className="flex items-center text-4xl justify-center my-8"
         style={{ minHeight: "500px" }}
