@@ -1,8 +1,8 @@
 .about {
   position: relative;
   max-width: 100%;
-  height: 70vh; /* Cambiar el valor de la altura */
-  background-image:url(../assets/constructora/abaout/about.jpg);
+  height: 150px; /* Cambiar el valor de la altura */
+  background-color:  rgba(10, 25, 233, 0.74);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,29 +11,15 @@
   margin: 50px auto;
 }
 
-/* Agrega esta regla para ajustar el ancho máximo de la imagen */
-
-.Aboutoverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(116, 116, 116, 0.596);
+.about_img {
+  max-width: 50%;
 }
 
-
-
-.text {
-  position: absolute;
-  width: 40%;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.p {
+  font-size: 20px;
+  padding: 2px
 }
-
-.h1t{
+.h1t {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -64,14 +50,6 @@
     font-size: 1.5rem;
    
   }
-  .Aboutoverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(116, 116, 116, 0.596);
-    }
   
   
 }
