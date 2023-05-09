@@ -6,46 +6,46 @@ import React from "react";
 
 const Obras = [
   {
-    name: "Palacio Cabreal Hunter (embajada de Portugal)",
+    name: "Palacio Cabreal Hunter",
 
-    decripcion: [
-      "cambio de la cubierta del techo, arreglos e impermeabilizacion medianera sobre bodegas chandon s.a, pintura de las fachadas y patios internos; reparacion de aberturas, restauracion de los pisos de los salones rojo, blanco y amarillo, restauracion de la mesa del comedor principal",
-    ],
+    descripcion: "Cambio de la cubierta del techo, arreglos e impermeabilizacion medianera, pintura de las fachadas y patios, reparacion de aberturas, restauracion de pisos",
 
-    año: 2021,
     img: "/obra1/embajada.jpg",
   },
   {
 
     name: "Tren san miguel (trenes argentinos)",
     descripcion: "Demolicion y retiro de materiales de estructura",
-    img: "",
+    img: "/obras/1.jpg",
   },
   {
-    name: "tren belgrano",
-    descripcion:
-      "Limpieza, desmalezamiento y colocacion de cerco perimetral para estaciones del tren belgrano cargas, provincia de santa fe y chaco",
-  },
+    name: "Tren Belgrano",
+    descripcion: "Limpieza, desmalezamiento y colocacion de cerco perimetral para estaciones del tren belgrano cargas, provincia de santa fe y chaco",
+      img: "/obras/3.jpg"
+    },
   {
-    descripcion: "Remodelacion de la planta depuradora sur en tandil",
+    name: "Planta depuradora Tandil",
+    descripcion: "Remodelacion de la planta depuradora sur",
+    img: "/obras/4.jpg"
 
   },
   {
     name: "Casa Rosada",
-    descripcion:
-
-      "Refaccion de las oficinas, pasillo y antesala de la casa rosada zona presidencia, demolicion y desmonte de la ex cocina y ex comedor",
+    descripcion: "Refaccion de las oficinas, pasillo y antesala de la casa rosada zona presidencia, demolicion y desmonte de la ex cocina y ex comedor",
+      img: "/obras/5.jpg"
   },
 
   {
-    name: "boleteria longchamps",
-    descripcion: "Longchamps remodelacion de boleteria longchamps",
+    name: "Boleteria Longchamps",
+    descripcion: "Remodelacion de boleteria longchamps",
+    img: "/obras/6.jpg"
   },
   {
-    name: "Deposito nave 53 talleres remedios de escalada",
+    name: "Deposito nave 53 remedios de escalada",
 
-    descripcion:
-      "Reconstruccion deposito nave 53 talleres remedios de escalada (remolicion, desmontaje retiro de material producido reemplazo de componenetes y puso, revetimnientos y revoques.)",
+    descripcion: "Reconstruccion deposito nave 53 talleres remedios de escalada (remolicion, desmontaje retiro de material producido reemplazo de componenetes y puso, revetimnientos y revoques.)",
+
+      img: "/obras/2.jpg"
   },
 ];
 const ObrasList = ({ obras }) => {
