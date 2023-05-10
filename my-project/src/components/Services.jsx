@@ -11,7 +11,7 @@ export default function Services(){
             description: "viviendas, edificios publicos y privados",
             image: image1
         },{
-            titulo: "Obras de Infraestructura",
+            titulo: "Servicios Industriales",
             description: "cloacas, pluviales, instalaciones de gas, instalaciones electricas y tendido de cañerias",
             image: image2
         },{

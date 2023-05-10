@@ -7,22 +7,22 @@ const Footer = () => {
       className={`${style.fondoFooter} bg-white overflow-hidden `}
       id="contact"
     >
-      <div className="py-8  px-4 mx-auto max-w-screen-md bottom-0 w-full">
-        <section className="bg-white dark:bg-divHero rounded w-full">
-          <div className="py-8  px-16 mx-auto max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+      <div className="py-8  px-4 mx-auto max-w-screen-md bottom-0 w-full ">
+        <section className="bg-white dark:bg-divHero rounded w-full ">
+          <div className="py-8  px-16 mx-auto max-w-screen-md ">
+            <h2 className=" text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
               Escribinos
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+            <p className="py-1 lg:mb-4 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
               Llene el siguiente formulario con su consulta
             </p>
-            <form action="#" className="space-y-8 ">
+            <form action="#" className="space-y-2 ">
               <div>
                 <label
                   for="email"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  email
+                  Email
                 </label>
                 <input
                   type="email"
@@ -63,7 +63,7 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 "
+                className="py-3 colorBoton px-5 text-sm font-medium text-center text-black rounded-lg  sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 "
               >
                 Enviar mensaje
               </button>
