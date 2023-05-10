@@ -1,21 +1,24 @@
 import { useSpring, animated } from "react-spring";
+import { useInView } from 'react-intersection-observer';
 
 export default function AboutSection() {
+  const [ref, inView] = useInView({ threshold: 0.1 });
+
   const textProps = useSpring({
-    from: { opacity: 0, y: 50 },
-    to: { opacity: 1, y: 0 },
+    from: { opacity: 0, x: -50 },
+    to: { opacity: inView ? 1 : 0, x: inView ? 0 : -50 },
     delay: 500
   });
 
   const imageProps = useSpring({
     from: { opacity: 0, x: 50 },
-    to: { opacity: 1, x: 0 },
+    to: { opacity: inView ? 1 : 0, x: inView ? 0 : 50 },
     delay: 1000
   });
 
   return (
     <section className="bg-white">
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div ref={ref} className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <animated.div style={textProps} className="text-black sm:text-lg">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
             Sobre Nosotros
@@ -51,5 +54,3 @@ export default function AboutSection() {
     </section>
   );
 }
-
-
