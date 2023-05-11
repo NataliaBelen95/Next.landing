@@ -27,6 +27,8 @@ const AllLinks = () => [
 ];
 const NavBar = () => {
   const [active, setActive] = useState(false);
+  const [fixed, setFixed] = useState(false);
+
   const handleClick = () => {
     console.log("Antes de cambiar el estado:", active);
     setActive(!active);
@@ -45,8 +47,12 @@ const NavBar = () => {
 
         if (currentScrollY > prevScrollY && currentScrollY > 100) {
           setHideNav(true);
+          if (currentScrollY > 200) {
+            setFixed(true);
+          }
         } else {
           setHideNav(false);
+          setFixed(false);
         }
 
         prevScrollY = currentScrollY;
@@ -59,23 +65,29 @@ const NavBar = () => {
       };
     } else {
       setHideNav(false); // Asegurarnos de que el estado `hideNav` sea falso en otras rutas
+      setFixed(true); // Hacer la barra de navegación fija en otras rutas
     }
   }, [router.pathname]);
 
-  const links = AllLinks().map((link) => (
-    <Link href={link.path} key={link.whereName} legacyBehavior>
-      <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white">
-        {link.whereName}
-      </a>
-    </Link>
-  ));
+  const links = AllLinks().map((link) => {
+    if (router.pathname !== "/" && link.whereName === "Sobre Nosotros") {
+      return null; // devuelve null si no está en la página de inicio y el enlace es "Sobre Nosotros"
+    }
+    return (
+      <Link href={link.path} key={link.whereName} legacyBehavior>
+        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white">
+          {link.whereName}
+        </a>
+      </Link>
+    );
+  });
 
   return (
     <>
       <nav
         className={`flex items-center flex-wrap bg-black p-3 fixed top-0 left-0 w-full  ${
           hideNav ? "hidden" : ""
-        }`}
+        }${fixed ? "fixed-nav" : ""}`}
         style={{ transition: "all 0.3s ease-in-out", zIndex: 10 }} // Agrega esta línea
       >
         <Link href="/" legacyBehavior>
