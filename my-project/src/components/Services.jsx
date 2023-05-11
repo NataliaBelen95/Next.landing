@@ -21,12 +21,12 @@ export default function Services() {
       image: image2
     },
     {
-      title: "Obras Viales",
+      title: "Obras Viales y Demoliciones",
       description: "movimiento de suelo, pavimentos de hormigon",
       image: image3
     },
     {
-      title: "Pisos, Piletas industriales y Demoliciones",
+      title: "Pisos y Piletas industriales",
       description: "superficies de concreto para soportar cargas",
       image: image4
     }

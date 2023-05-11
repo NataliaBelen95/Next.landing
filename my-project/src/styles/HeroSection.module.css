@@ -2,7 +2,9 @@
     position: relative; /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
     max-width: 100%;
     height: 100vh;
-    background-image:url(https://www.carreras.unse.edu.ar/wp-content/uploads/2020/09/57287-1024x576.jpg);
+    /* background-image:url(https://www.carreras.unse.edu.ar/wp-content/uploads/2020/09/57287-1024x576.jpg); */
+    background-image:url(https://img.freepik.com/foto-gratis/sitio-construccion_53876-14088.jpg?w=1800&t=st=1683675203~exp=1683675803~hmac=ebac405fbb7d2d981f87897779b8139a6a5dacff25993f4eea3f137e70a84e84);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +24,8 @@
     left: 0;
     width: 60%;
     height: 100%;
-    background-color: rgba(10, 25, 233, 0.603);
+    /* background-color: rgba(10, 25, 233, 0.603); */
+    background-color: rgba(155,201,252, 0.6);
     transform-origin: top right;
     transform: skew(-25deg);
   }

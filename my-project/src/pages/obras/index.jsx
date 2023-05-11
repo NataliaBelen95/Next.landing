@@ -1,6 +1,6 @@
 
 import NavBar from "../../components/NavBar";
-
+import Footer from "../../components/Footer";
 import React from "react";
 
 
@@ -53,27 +53,29 @@ const ObrasList = ({ obras }) => {
 
     <>
       <NavBar />
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-40 p-4">
-        {obras.map((obra) => (
-          <article
-
-            key={obra.name}
-
-            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-          >
-            <img
-              src={obra.img}
-              alt={obra.trabajo}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-bold mb-2">{obra.name}</h2>
-              <p className="text-gray-700 text-base">{obra.descripcion}</p>
-              <p className="text-gray-600 text-sm mt-2">{obra.año}</p>
-            </div>
-          </article>
-        ))}
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-40 mx-20 mb-6">
+  {obras.map((obra) => (
+    <article
+      key={obra.name}
+      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+    >
+      <img
+        src={obra.img}
+        alt={obra.trabajo}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4">
+        <h2 className="text-xl font-bold mb-2">{obra.name}</h2>
+        <p className="text-gray-700 text-base">{obra.descripcion}</p>
+        <p className="text-gray-600 text-sm mt-2">{obra.año}</p>
       </div>
+    </article>
+  ))}
+</div>
+
+
+
+      
     </>
 
   );
@@ -85,6 +87,7 @@ const Index = () => {
     <>
       <NavBar />
       <ObrasList obras={Obras} />
+      <Footer/>
     </>
   );
 
