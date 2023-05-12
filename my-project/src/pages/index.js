@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection";
 import Footer from "../components/Footer";
 import Services from "../components/Services";
 import Clients from "../components/Clients";
+import Wsp from "../components/Wsp";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <HeroSection />
 
       <AboutSection />
-      <Services/>
-      <Clients/>
+      <Services />
+      <Clients />
+      <Wsp />
       {/* <div
         className="flex items-center text-4xl justify-center my-8"
         style={{ minHeight: "500px" }}
