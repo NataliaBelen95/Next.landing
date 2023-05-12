@@ -14,5 +14,8 @@
     color: theme('colors.dark');
   }
 
+.colorBoton{
+  background-color: rgba(155, 201, 252, 0.6);
 
+}
   
