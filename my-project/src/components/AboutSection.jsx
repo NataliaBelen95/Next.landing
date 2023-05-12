@@ -43,7 +43,7 @@ export default function AboutSection() {
             src="/obra1/exterior1.jpg"
             alt="office content 1"
           />
-          <animated.img
+          <img
             style={imageProps}
             className="mt-4 w-full lg:mt-10 rounded-lg shadow-xl"
             src="/obra1/exterior2.jpg"
