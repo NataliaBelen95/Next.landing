@@ -1,9 +1,9 @@
 .hero {
     position: relative; /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
     max-width: 100%;
-    height: 100vh;
-    /* background-image:url(https://www.carreras.unse.edu.ar/wp-content/uploads/2020/09/57287-1024x576.jpg); */
-    background-image:url(https://img.freepik.com/foto-gratis/sitio-construccion_53876-14088.jpg?w=1800&t=st=1683675203~exp=1683675803~hmac=ebac405fbb7d2d981f87897779b8139a6a5dacff25993f4eea3f137e70a84e84);
+
+    height: 800px;
+    background-image:linear-gradient(#1b1b1ba1,  rgba(10, 25, 233, 0.863)) ,url(/png.constructora/fondo2.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,11 +12,23 @@
     align-items: center;
    
    
+   
   }
- 
+  .text_left {
+    animation: left 1s forwards;
+  }
   
-
-  .colorOverlay {
+  @keyframes left {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /* .colorOverlay {
     display: flex;
     position: absolute;
     top: 0;
@@ -28,12 +40,11 @@
     background-color: rgba(155,201,252, 0.6);
     transform-origin: top right;
     transform: skew(-25deg);
-  }
+  } */
 
 
-  .hero .img {
-    margin-left: 5.2rem;
-    margin-top: 15rem;
+.img_hero{
+  
     filter: drop-shadow(0 2px 2px rgb(0, 0, 0) );
 
   }
@@ -64,7 +75,7 @@
     /* Agrega esto para que el elemento "colorOverlay" se posicione correctamente */
       max-width: 100%;
       overflow-x: hidden;
-     
+      margin-bottom: 60px; 
      
      
     }
