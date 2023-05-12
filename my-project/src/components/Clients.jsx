@@ -10,7 +10,9 @@ import img8 from "../assets/constructora/clientes/8.png"
 import img9 from "../assets/constructora/clientes/9.png"
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-
+import {MdOutgoingMail} from 'react-icons/md'
+import {BsFillTelephoneForwardFill} from 'react-icons/bs'
+import {MdGpsFixed} from 'react-icons/md'
 
 
 const items = [
@@ -68,6 +70,22 @@ export default function Clients() {
           </div>
         ))}
       </Carousel>
+      
+      <div className="flex flex-col items-center justify-center mt-8">
+  <div className="flex items-center">
+    <MdOutgoingMail className="h-6 w-6 mr-2 text-gray-700" />
+    <p className="text-gray-700 font-semibold">infohfconstrucciones@gmail.com</p>
+  </div>
+  <div className="flex items-center mt-4">
+    <BsFillTelephoneForwardFill className="h-6 w-6 mr-2 text-gray-700" />
+    <p className="text-gray-700 font-semibold">(+54) 911-2186-8988</p>
+  </div>
+  <div className="flex items-center mt-4">
+    <MdGpsFixed className="h-6 w-6 mr-2 text-gray-700" />
+    <p className="text-gray-700 font-semibold">Ameghino 2956, Piso:5 Dpto:D Saenz Peña</p>
+  </div>
+</div>
+
     </div>
   );
 }

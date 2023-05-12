@@ -8,7 +8,7 @@ function Wsp() {
     >
       <img
         src="/png.constructora/flecha.png"
-        class="w-6 h-6 cursor-pointer mb-2"
+        className="w-6 h-6 cursor-pointer mb-2"
         style={{ cursor: "pointer", color: "rgba(10, 25, 233, 0.603)" }}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
