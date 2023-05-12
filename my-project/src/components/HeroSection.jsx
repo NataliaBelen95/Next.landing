@@ -26,20 +26,28 @@ function HeroSection() {
 
   return (
     <section className={`${style.hero} `}>
-      <div className={`${style.colorOverlay} flex justify-center items-center`}>
-        <h1 className="text-4xl font-bold text-white flex justify-center items-center not-italic ">
-          Construyendo realidades Juntos
-        </h1>
+      {/* <div className={`${style.colorOverlay} flex justify-center items-center`}>
+        {" "}
+      </div> */}
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-5/12 w-full">
+          <div className="flex justify-center mx-auto ">
+            <img
+              src="/logo/logo.png"
+              className={style.img_hero}
+              style={{ width: "50%" }}
+            />
+          </div>
+          <p className={`text-2xl mb-8 font-bold ${style.text_left}`}>
+            {" "}
+            Construyendo Realidades Juntos
+          </p>
+          <h1 className={`my-4 text-5xl font-bold ${style.text_left}`}></h1>
+        </div>
       </div>
-
-      {/* Elemento div con color de fondo */}
-      <Image className={style.img} src={logo} width={500} height={50}></Image>
       <div
-        className={`${style.svg_hero} path svg-hero-light `}
-        // className={`${style.svg_hero} path svg-hero-light ${
-        //   isVisible ? "" : "hidden"
-        // }`}
-        style={{ height: "150px", overflow: "hidden" }}
+        className={style.svg_hero}
+        style={{ height: "120px", overflow: "hidden" }}
       >
         <svg
           viewBox="0 0 500 150"
