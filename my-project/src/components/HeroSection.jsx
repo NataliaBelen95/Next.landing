@@ -29,8 +29,8 @@ function HeroSection() {
       {/* <div className={`${style.colorOverlay} flex justify-center items-center`}>
         {" "}
       </div> */}
-      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <div class="text-center lg:w-5/12 w-full">
+      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div className="text-center lg:w-5/12 w-full">
           <div className="flex justify-center mx-auto ">
             <img
               src="/logo/logo.png"
