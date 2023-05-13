@@ -117,6 +117,7 @@ const Footer = () => {
           </span>
 
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          
             <a
               href="#"
               className="text-black hover:text-gray-900 dark:hover:text-white"
