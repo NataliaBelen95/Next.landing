@@ -25,19 +25,7 @@
       transform: translateX(0);
     }
   }
-  /* .colorOverlay {
-    display: flex;
-    position: absolute;
-    top: 0;
-    align-items: center;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    /* background-color: rgba(10, 25, 233, 0.603); */
-    /* background-color: rgba(155,201,252, 0.6);
-    transform-origin: top right;
-    transform: skew(-25deg);
-  } */
+
 
 .img_hero{
   

@@ -62,13 +62,17 @@ const NavBar = () => {
     }
   }, [router.pathname]);
 
-  const links = AllLinks().map((link) => (
-    <Link href={link.path} key={link.whereName} legacyBehavior>
-      <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white">
-        {link.whereName}
-      </a>
-    </Link>
-  ));
+  const links = AllLinks().map((link) =>
+    router.pathname !== "/" &&
+    link.path !== "/" &&
+    link.path !== "/inicio" ? null : (
+      <Link href={link.path} key={link.whereName} legacyBehavior>
+        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white">
+          {link.whereName}
+        </a>
+      </Link>
+    )
+  );
 
   return (
     <>
