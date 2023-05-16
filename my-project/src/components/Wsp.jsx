@@ -14,7 +14,7 @@ function Wsp() {
       />
 
       <a
-        href="https://wa.me/5491160563796?text=Hola,%20quisiera%20hacer%20una%20consulta"
+        href="https://wa.me/5491121868988?text=Hola,%20quisiera%20hacer%20una%20consulta"
         target="_blank"
         style={{ marginLeft: "8px" }}
       >
