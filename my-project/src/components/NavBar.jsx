@@ -1,36 +1,42 @@
 import React from "react";
 import Link from "next/link";
-
-// import Logo from "./Logo";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import logo from "../assets/constructora/logo.blanco.png";
 import Image from "next/image";
 
-const AllLinks = () => [
-  {
-    path: "/",
-    whereName: "Inicio",
-  },
-  {
-    path: "#about",
-    whereName: "Sobre Nosotros",
-  },
-  {
-    path: "/obras",
-    whereName: "Nuestras Obras",
-  },
-  {
-    path: "#contact",
-    whereName: "Contacto",
-  },
-];
+const AllLinks = (currentPath) => {
+  const links = [
+    {
+      path: "/",
+      whereName: "Inicio",
+    },
+    {
+      path: "/obras",
+      whereName: "Nuestras Obras",
+    },
+  ];
+
+  if (currentPath !== "/obras") {
+    links.push(
+      {
+        path: "#about",
+        whereName: "Sobre Nosotros",
+      },
+      {
+        path: "#contact",
+        whereName: "Contacto",
+      }
+    );
+  }
+
+  return links;
+};
+
 const NavBar = () => {
   const [active, setActive] = useState(false);
   const handleClick = () => {
-    console.log("Antes de cambiar el estado:", active);
     setActive(!active);
-    console.log("Después de cambiar el estado:", active);
   };
 
   const [hideNav, setHideNav] = useState(true);
@@ -58,11 +64,13 @@ const NavBar = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     } else {
-      setHideNav(false); // Asegurarnos de que el estado `hideNav` sea falso en otras rutas
+      setHideNav(false);
     }
   }, [router.pathname]);
 
-  const links = AllLinks().map((link) => (
+  const currentPath = router.pathname;
+
+  const links = AllLinks(currentPath).map((link) => (
     <Link href={link.path} key={link.whereName} legacyBehavior>
       <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white">
         {link.whereName}
@@ -76,11 +84,11 @@ const NavBar = () => {
         className={`flex items-center flex-wrap bg-black p-3 fixed top-0 left-0 w-full  ${
           hideNav ? "hidden" : ""
         }`}
-        style={{ transition: "all 0.3s ease-in-out", zIndex: 10 }} // Agrega esta línea
+        style={{ transition: "all 0.3s ease-in-out", zIndex: 10 }}
       >
         <Link href="/" legacyBehavior>
           <a className="inline-flex items-center p-2 mr-4">
-            <Image src={logo} width={150}></Image>
+            <Image src={logo} width={150} />
           </a>
         </Link>
         <button
@@ -116,6 +124,6 @@ const NavBar = () => {
       </nav>
     </>
   );
-};
+}
 
 export default NavBar;

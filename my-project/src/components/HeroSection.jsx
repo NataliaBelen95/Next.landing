@@ -38,7 +38,7 @@ function HeroSection() {
               style={{ width: "50%" }}
             />
           </div>
-          <p className={`text-2xl mb-8 font-bold ${style.text_left}`}>
+          <p className={`text-3xl mt-8 font-bold ${style.text_left}`}>
             {" "}
             Construyendo Realidades Juntos
           </p>
