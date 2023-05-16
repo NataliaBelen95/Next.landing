@@ -3,7 +3,7 @@ import React from "react";
 function Wsp() {
   return (
     <div
-      className="fixed bottom-0 right-0 flex flex-col items-end mr-2 mb-2 -z-99999"
+      className="fixed bottom-0 right-0 flex flex-col items-end mr-2 mb-2 z-50"
       style={{ display: "flex", alignItems: "center" }}
     >
       <img
