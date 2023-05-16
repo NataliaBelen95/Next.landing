@@ -1,6 +1,9 @@
 import React from "react";
 import style from "../styles/Footer.module.css";
 import { useState } from "react";
+import {MdGpsFixed} from 'react-icons/md'
+
+
 const Footer = () => {
   const [message, setMessage] = useState('')
   const handleSubmit = async (e) =>{
@@ -24,7 +27,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`${style.fondoFooter} bg-white overflow-hidden `}
+      className={`${style.fondoFooter} bg-white overflow-hidden z-10 `}
       id="contact"
     >
       <div className="py-8  px-4 mx-auto max-w-screen-md bottom-0 w-full ">
@@ -114,6 +117,12 @@ const Footer = () => {
               Fleitas™
             </a>
             . All Rights Reserved.
+          </span>
+          <span className="text-sm text-lg sm:text-center text-black flex items-center">
+          <MdGpsFixed className="h-5 w-5 mr-2 text-gray-700" />
+              <a href="https://goo.gl/maps/hc4V4aaqySF4X1dX9" target='_blank' className="hover:underline text-xs">
+              Ameghino 2956, Piso:5 Dpto:D Saenz Peña
+            </a>
           </span>
 
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">

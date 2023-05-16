@@ -3,7 +3,7 @@ import React from "react";
 function Wsp() {
   return (
     <div
-      className="fixed bottom-0 right-0 flex flex-col items-end mr-2 mb-2 z-99999"
+      className="fixed bottom-0 right-0 flex flex-col items-end mr-2 mb-2 -z-99999"
       style={{ display: "flex", alignItems: "center" }}
     >
       <img
@@ -14,7 +14,7 @@ function Wsp() {
       />
 
       <a
-        href="https://wa.me/5491160563796?text=Hola,%20quisiera%20hacer%20una%20consulta"
+        href="https://wa.me/5491121868988?text=Hola,%20quisiera%20hacer%20una%20consulta"
         target="_blank"
         style={{ marginLeft: "8px" }}
       >

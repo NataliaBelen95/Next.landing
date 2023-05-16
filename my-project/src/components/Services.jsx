@@ -15,7 +15,7 @@ export default function Services() {
   const intersection = useIntersection(ref, {
     root: null,
     rootMargin: "0px",
-    threshold: 0.3 // Definimos un umbral personalizado
+    threshold: 0.5 // Definimos un umbral personalizado
   });
 
   useEffect(() => {
