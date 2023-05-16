@@ -111,16 +111,16 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 w-full" />
 
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-lg sm:text-center text-black">
+          <span className="text-sm text-lg sm:text-center text-black font-bold">
             © 2023
-            <a href="#" className="hover:underline">
+            <a href="#" className="hover:underline font-bold">
               Fleitas™
             </a>
             . All Rights Reserved.
           </span>
           <span className="text-sm text-lg sm:text-center text-black flex items-center">
           <MdGpsFixed className="h-5 w-5 mr-2 text-gray-700" />
-              <a href="https://goo.gl/maps/hc4V4aaqySF4X1dX9" target='_blank' className="hover:underline text-xs">
+              <a href="https://goo.gl/maps/hc4V4aaqySF4X1dX9" target='_blank' className="hover:underline text-xs font-bold">
               Ameghino 2956, Piso:5 Dpto:D Saenz Peña
             </a>
           </span>
