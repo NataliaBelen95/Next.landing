@@ -64,7 +64,7 @@ export default function Clients() {
       >
         {items.map((item) => (
           <div key={item.id} className="flex justify-center items-center w-52 h-52">
-            <Image src={item.image} alt="client" width={180} height={100} objectFit="contain"/>
+            <Image src={item.image} alt="client" width={180} height={100}/>
           </div>
         ))}
       </Carousel>
